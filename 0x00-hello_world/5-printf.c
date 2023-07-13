@@ -1,0 +1,14 @@
+#include <stdio.h>
+/**
+ * main - this function prints a string with printf
+ *
+ * Description: this function prints a string with command printf
+ * Return: the return value is 0
+ */
+int main(void)
+{
+	char strng[] = "with proper grammar, but the outcome is a piece of art,";
+
+	printf(strng);
+	return (0);
+}
