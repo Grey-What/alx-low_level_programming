@@ -8,6 +8,7 @@
  * statements if it is positve, zero, or negative
  *
  * return: this functions return value is zero
+ * Return: is equal to thenumber zero
  */
 int main(void)
 {
