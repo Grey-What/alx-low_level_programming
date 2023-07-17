@@ -10,7 +10,7 @@
 int main(void)
 {
 	char b10 = '0';
-        char hexdec = 'a';
+	char hexdec = 'a';
 	int count;
 
 	while (count <= 15)
@@ -20,7 +20,7 @@ int main(void)
 			putchar(b10);
 			b10++;
 		}
-	        else
+		else
 		{
 			putchar(hexdec);
 			hexdec++;
