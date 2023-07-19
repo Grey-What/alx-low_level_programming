@@ -15,8 +15,18 @@ void times_table(void)
 		while (j <= 9)
 		{
 			int ans = i * j;
-			_putchar((ans / 10) + 48);
-			_putchar((ans % 10 + 48));
+			int fdigt = ans / 10;
+			int ldigt = ans % 10;
+
+			if (fdigt > 0)
+			{
+				_putchar(fdigt + 48);
+			}
+			else
+				_putchar(' ');
+
+			_putchar(ldigt + 48);
+			_putchar(',');
 			_putchar(' ');
 			j++;
 		}
