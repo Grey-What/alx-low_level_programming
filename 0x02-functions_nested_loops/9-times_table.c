@@ -23,11 +23,19 @@ void times_table(void)
 				_putchar(fdigt + 48);
 			}
 			else
+			{
 				_putchar(' ');
-
-			_putchar(ldigt + 48);
-			_putchar(',');
-			_putchar(' ');
+			}
+			if (j < 9)
+			{
+				_putchar(ldigt + 48);
+				_putchar(',');
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar(ldigt + 48);
+			}
 			j++;
 		}
 		_putchar('\n');
