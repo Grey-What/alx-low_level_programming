@@ -22,7 +22,7 @@ void times_table(void)
 			{
 				_putchar(fdigt + 48);
 			}
-			else
+			else if (j != 0)
 			{
 				_putchar(' ');
 			}
