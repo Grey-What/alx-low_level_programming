@@ -22,24 +22,25 @@ int main(void)
 		{
 			char fizzbuzz[] = "FizzBuzz";
 
-			printf("%s ", fizzbuzz);
+			printf("%s", fizzbuzz);
 		}
 		else if (fizz == 0)
 		{
 			char fizzstr[] = "Fizz";
 
-			printf("%s ", fizzstr);
+			printf("%s", fizzstr);
 		}
 		else if (buzz == 0)
 		{
 			char buzzstr[] = "Buzz";
 
-			printf("%s ", buzzstr);
+			printf("%s", buzzstr);
 		}
 		else
 		{
-			printf("%d ", i);
+			printf("%d", i);
 		}
+		putchar(' ');
 		i++;
 	}
 	putchar('\n');
