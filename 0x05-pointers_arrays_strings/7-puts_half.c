@@ -31,7 +31,7 @@ void puts_half(char *str)
 		}
 		_putchar('\n');
 	}
-	else
+	else if (leng % 2 != 0)
 	{
 		while (un_half <= leng)
 		{
