@@ -22,7 +22,11 @@ void puts_half(char *str)
 	half = leng / 2;
 	un_half = (leng - 1) / 2;
 
-	if (leng % 2 == 0)
+	if (leng <= 0)
+	{
+		_putchar('!');
+	}
+	else if (leng % 2 == 0)
 	{
 		while (half <= leng)
 		{
