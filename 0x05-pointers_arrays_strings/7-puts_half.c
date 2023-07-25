@@ -24,6 +24,7 @@ void puts_half(char *str)
 
 	if (leng <= 0)
 	{
+		_putchar(' ');
 	}
 	else if (leng % 2 == 0)
 	{
