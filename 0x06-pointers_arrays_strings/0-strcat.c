@@ -5,7 +5,7 @@
  * @dest: is the first string
  * @src: is thesecond string
  *
- * Returns pointer to string
+ * Return: pointer to string
  */
 char *_strcat(char *dest, char *src)
 {
@@ -21,7 +21,7 @@ char *_strcat(char *dest, char *src)
 
 	while (src[j] != '\0')
 	{
-	        dest[count + j] = src[j];
+		dest[count + j] = src[j];
 		j++;
 	}
 	return (dest);
