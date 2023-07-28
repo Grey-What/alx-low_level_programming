@@ -11,10 +11,12 @@ char *cap_string(char *str)
 	int i = 0;
 	char seps[13] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', ' ',
 			 '\n', '\t'};
-	int j = 0;
+	int j;
 
 	while (str[i] != '\0')
 	{
+		j = 0;
+
 		if (i == 0 && str[i] >= 'a' && str[i] <= 'z')
 		{
 			str[i] = str[i] - 32;
@@ -25,7 +27,7 @@ char *cap_string(char *str)
 			{
 				if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
 				{
-					str[i] = str[i] - 32;
+					str[i + 1] = str[i + 1] - 32;
 				}
 			}
 			j++;
