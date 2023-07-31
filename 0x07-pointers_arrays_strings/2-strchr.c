@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strchr - this function finds the first occurance of a specified character
  * in a string
@@ -10,20 +11,13 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-	char *result;
-
-	while (s[i] != '\0')
+	while (*s)
 	{
-		if (s[i] == c)
+		if (*s == c)
 		{
-			result = &(s[i - 1]);
+			return (s);
 		}
-/**		else
- *		{
- *			result = NULL;
- }*/
-		i++;
+		s++;
 	}
-	return (result);
+	return (NULL);
 }
