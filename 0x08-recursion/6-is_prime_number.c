@@ -14,7 +14,7 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (checker(n, n -1));
+	return (checker(n, n - 1));
 }
 /**
  * checker - function determines if number has more than two functions
@@ -30,5 +30,5 @@ int checker(int n, int a)
 		return (1);
 	if (n % a == 0 && a > 0)
 		return (0);
-	return (checker(n, a -1));
+	return (checker(n, a - 1));
 }
