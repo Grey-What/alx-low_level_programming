@@ -3,6 +3,7 @@
  * is_prime_number - function checks if number is a prime number
  *
  * @n: number to be evaluated
+ * @a: factor
  *
  * Return: return 0 if not a prime, 1 if it is a prime
  */
