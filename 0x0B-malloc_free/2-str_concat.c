@@ -44,5 +44,6 @@ char *str_concat(char *s1, char *s2)
 	for (k = 0; s2[k] != '\0'; k++)
 		nstr[count + k] = s2[k];
 
+	nstr[count + k] = '\0';
 	return (nstr);
 }
