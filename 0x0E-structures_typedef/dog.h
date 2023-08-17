@@ -18,4 +18,9 @@ struct dog
 	char *owner;
 };
 
+/**
+ * defining my_dog
+ */
+struct dog my_dog;
+
 #endif
