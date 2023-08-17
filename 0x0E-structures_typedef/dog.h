@@ -19,7 +19,7 @@ struct dog
 };
 
 /**
- * definition of new type of type struct dog
+ * dog_t - new type of type struct dog
  */
 typedef struct dog dog_t;
 
