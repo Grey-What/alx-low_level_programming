@@ -28,22 +28,18 @@ void print_all(const char * const format, ...)
 			case 'c':
 				printf("%s%c", div, va_arg(args, int));
 				break;
-
 			case 'i':
 				printf("%s%i", div, va_arg(args, int));
 				break;
-
 			case 'f':
 				printf("%s%f", div, va_arg(args, double));
 				break;
-
 			case 's':
 				s = va_arg(args, char *);
 				if (s == NULL)
 					s = "(nil)";
 				printf("%s%s", div, s);
 				break;
-
 			default:
 				i++;
 				continue;
@@ -52,7 +48,6 @@ void print_all(const char * const format, ...)
 			i++;
 		}
 	}
-
 	printf("\n");
 	va_end(args);
 }
