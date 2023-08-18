@@ -28,11 +28,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		else if (separator == NULL)
 			printf("%s", s);
+
 		else if (i == 0 && separator)
 			printf("%s", s);
+
 		else
 			printf("%s%s", separator, s);
 	}
-	va_end(args);
 	printf("\n");
+
+	va_end(args);
 }
