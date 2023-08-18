@@ -26,7 +26,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (s == NULL)
 			s = "(nil)";
 
-		else if (separator == NULL)
+		if (separator == NULL)
 			printf("%s", s);
 
 		else if (i == 0 && separator)
@@ -36,6 +36,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s%s", separator, s);
 	}
 	printf("\n");
-
 	va_end(args);
 }
