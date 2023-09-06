@@ -23,9 +23,10 @@ char *argstostr(int ac, char **av)
 			j++;
 			counter++;
 		}
+		counter++;
 		i++;
 	}
-	counter = counter + ac + 1;
+	counter += 1;
 
 	str = malloc(sizeof(char) * counter);
 
