@@ -1,1 +1,20 @@
-to be updated
+# 0x0C. C - More malloc, free
+
+### Learning Objectives:
+- what is the malloc function and how to use it
+- what is the exit function and how to use it
+- what are function realloc and calloc, and how to use them
+
+### Tasks
+0. Trust no one
+   -Write a function that allocates memory using malloc
+1. string_nconcat
+   -Write a function that concatenates two strings.
+2. _calloc
+   -Write a function that allocates memory for an array, using malloc.
+3. array_range
+   -Write a function that creates an array of integers.
+4. _realloc
+   -Write a function that reallocates a memory block using malloc and free
+5. We must accept finite disappointment, but never lose infinite hope
+   -Write a program that multiplies two positive numbers.
