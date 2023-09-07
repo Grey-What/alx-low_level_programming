@@ -1,3 +1,4 @@
+# alx-low_level_programming
 this repository will contain all ALX_SE C projects and their directories and
 tasks files.
 all main.c files are pre-written by the school and I am tasked with writing
