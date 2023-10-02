@@ -15,7 +15,7 @@ char *create_buff(char *s)
 
 	if (!buff)
 	{
-		dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", s);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", s);
 		exit(99);
 	}
 	return (buff);
@@ -35,7 +35,7 @@ void close_fd(int fd)
 
 	if (val == -1)
 	{
-		dprintf(STDOUT_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }
@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDOUT_FILENO, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 
 	if (rd == -1 || fd_from == -1)
 	{
-		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n"
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n"
 			, argv[1]);
 		exit(98);
 	}
@@ -73,7 +73,7 @@ int main(int argc, char *argv[])
 
 	if (fd_to == -1 || wr == -1)
 	{
-		dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 	free(buff);
