@@ -60,26 +60,29 @@ int main(int argc, char *argv[])
 
 	buff = create_buff(argv[2]);
 	fd_from = open(argv[1], O_RDONLY);
-	rd = read(fd_from, buff, 1024);
 	fd_to = open(argv[2], O_TRUNC | O_WRONLY | O_CREAT, 0664);
 
-	if (rd == -1 || fd_from == -1)
+	if (fd_from == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n"
 			, argv[1]);
 		exit(98);
 	}
-	wr = write(fd_to, buff, 1024);
-
-	if (fd_to == -1 || wr == -1)
+	while ((rd = read(fd_from, buff, 1024)) > 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		free(buff);
-		exit(99);
+		wr = write(fd_to, buff, rd);
+
+		if (wr != rd)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n"
+				, argv[2]);
+			free(buff);
+			exit(99);
+		}
 	}
-	free(buff);
-	close_fd(fd_from);
-	close_fd(fd_to);
+		free(buff);
+		close_fd(fd_from);
+		close_fd(fd_to);
 
 	return (0);
 }
