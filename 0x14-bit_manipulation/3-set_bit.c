@@ -7,9 +7,9 @@
  *
  * Return: 1 on success, -1 on fail
  */
-int set_bit(unsigned long int *n, unsinged int index)
+int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsinged long int bits;
+	unsigned long int bits;
 
 	if (index > 64)
 	{
