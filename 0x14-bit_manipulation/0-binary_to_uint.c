@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * binary_t_uint - function converts binaary to unsigned int
+ * binary_to_uint - function converts binary to unsigned int
  *
  * @b: binary to be converted
  *
@@ -16,8 +16,8 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = 0; b[i] != '\0'; i++)
 	{
-	if (b[i] != '0' && b[i] != '1')
-		return (0);
+		if (b[i] != '0' && b[i] != '1')
+			return (0);
 	}
 
 	for (i = 0; b[i] != '\0'; i++)
