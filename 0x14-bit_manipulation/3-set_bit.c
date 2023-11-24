@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * set-bit - set the value of a bit at given index to 1
+ * set_bit - set the value of a bit at given index to 1
  *
  * @index: index of bit to edit
  * @n: number that bit needs to be edited of
